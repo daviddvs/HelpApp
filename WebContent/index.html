@@ -1,0 +1,67 @@
+<!-- $Id: index.html Oct 13, 2015 2:51:24 PM tta1718$
+
+ Copyright (C) 2017 Maider Huarte Arrayago
+
+ This file is part of TTA1718_LS-EX_09-10S_WebContent.zip.
+
+ TTA1718_LS-EX_09-10S_WebContent.zip is based on templates by Eclipse.org and it is
+ intended for learning purposes only.
+ 
+ TTA1718_LS-EX_09-10S_WebContent.zip is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ TTA1718_LS-EX_08S_WebContent.zip is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<title>HelpApp</title>
+</head>
+<body>
+	<div style="margin:16px">
+		<h3>HelpApp</h3>
+		<!-- <h1 style="text-align:center">WELCOME TO THE APP WEB SERVICES</h1>	
+		<p>uploadFile service: </p>
+        <form method="POST" action="http://localhost:8080/prueba_eclipse/rest/School/uploadFile" enctype="multipart/form-data">
+        <input type="hidden" name="filetype" value="img">
+        <input type="file" name="file" accept="image/*">
+        <br/>
+        <input type="submit" value="SEND">
+        </form>
+        <br/> -->
+        <form method="POST" action="http://localhost:8080/HelpApp/rest/School/uploadSolution" enctype="application/json">
+        <select name="question">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		</select>
+        <select name="score">
+		  <option value="8">Bilbao</option>
+		  <option value="10">Vitoria</option>
+		  <option value="6">San Sebastian</option>
+		  <option value="0">Pamplona</option>
+		</select>
+		<select name="date">
+		  <option value="2017-10-22 11:48:26">Time1</option>
+		  <option value="2017-10-21 10:48:26">Time2</option>
+		  <option value="2017-10-20 09:48:26">Time3</option>
+		  <option value="2017-10-19 08:48:26">Time4</option>
+		</select>
+        <br/>
+        <input type="submit" value="SEND">
+        </form>
+        <p>requestQuestions service:</p>        
+        <a href="http://localhost:8080/HelpApp/rest/School/requestQuestions">http://localhost:8080/HelpApp/rest/School/requestQuestion?appField=Geography</a>        
+					
+	</div>
+</body>
+</html>
